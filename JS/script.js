@@ -145,7 +145,7 @@ for (vis in ansatte){
 
 
 
-  // Booking 
+  // Booking  selvstudie III
 
 
 
@@ -175,7 +175,7 @@ function bU5n(){
 }
 
 
-
+//Selvstudiedag III
     function copyToNavn(navn) {
         document.getElementById('navn_ud').textContent = 'Navn: ' + navn.value;
     }

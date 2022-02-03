@@ -1,4 +1,4 @@
-/*
+/* første forsøg --- 
   showMenu.addEventListener('click', function() {
     displayNone.style.display = 'block';
     bNav.style.left = '37'+'px'; // Selvstudie II.iiiiii
@@ -27,8 +27,9 @@
   let input = document.getElementById('burgerCheck');
   menuToggle.addEventListener('click', function(){
     if(input.checked){ 
-        bNav.style.opacity = '1'; // Selvstudie II.iiiiii
+        bNav.style.opacity = '1'; // Selvstudie II.iiii
         bNav.style.top = '45'+'px'
+        //Selvstudie II.i
         bNav.innerHTML = `    
         <ul class="menu">
         <li>
