@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Restaurant</title>
+   
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/nav.css" />
+</head>
+<body>
+    <div id="menuToggle">
+
+        <input type="checkbox" id="burgerCheck"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        
+        <nav id="bNav"></nav>
+         
+    <header id="header">
+        <div id="logo"><h1>Alice's Restaurant</h1></div>
+        <div id="quote"><h3> <em>Den mest fiktive resturant i Aarhus </em></h3></div>
+   
+   
+        
+    <!--    <div id="showMenu">☰</div>-->
+
+        
+
+    </header>
+
+    <main class="metaIndhold">
+
+        <div id="clock">
+
+            <div id="dato"></div>
+            <div id="current-time"></div>
+            
+          </div>
+        <div id="events">
+            <div id="eventsdato"></div>
+            <div id="eventbeskrivelse"></div>
+        </div> 
+
+
+        <section id="menu">
+            <h2>Dagen ret:</h2>
+            <div id="dagensRet"></div>
+            
+        </section>
+    <aside id="praktiskInfo"></aside>
+        <div id="opening"> <h2>Åbningstider: <br> 8:00 - 16:00</h2>
+        <div id="isOpen"></div>
+        </div>    
+    
+        <div id="hvem"><h2>Hvem er vi?</h2>
+            <ul id="ansatte"></ul></div>
+    
+        <div id="hvor"><h2>Book bord allerede i dag!  </h2>
+        
+
+        <div class="brugerUnd">
+            <div id="intro"></div>
+
+            <!-- Selvstudie III -->
+<form action="action.html" method="post">
+            <fieldset id="bU1">
+                <legend>Indtast venligst navn og Email</legend>
+                
+                <input id="navn_ind" type="text" onkeyup="copyToNavn(this)" placeholder="Alice Chefeson">
+
+                <input id="email_ind" type="email" placeholder="AR@MSFH.dk" onkeyup="copyToEmail(this)">
+                
+                <div id="bn1" class="videre" onclick="bU2n()">Næste</div>
+              </fieldset>
+              <fieldset id="bU2">
+                <legend>Antal personer</legend>
+                <label for="pax">mellem 1 og 10</label>
+                <input type="number" id="quantity" name="pax" min="1" max="10" onkeyup="copyToPax(this)">
+        
+                <div id="bn2" class="videre" onclick="bU3n()">Næste</div>
+              </fieldset>
+
+              <fieldset id="bU3">
+                <legend>Har nogen fødselsdag?</legend>
+                <input type="radio" id="bDay" name="birthday" value="Ja" oninput="copyToBday(this)">
+                <label value="ja" for="bDay">Ja</label><br>
+                <input type="radio" id="Bday" name="birthday" value="Nej" oninput="copyToBday(this)">
+                <label for="Bday">Nej</label><br>
+        
+                <div id="bn3" class="videre" onclick="bU4n()">Næste</div>
+              </fieldset>
+
+
+              <fieldset id="bU4">
+                <legend>Vælg dato</legend>
+                <label for="dato_visit">Dato:</label>
+              <input type="date" id="visit_dato" name="dato_visit" oninput="copyToVdato(this)" min="2018-01-01" max="2023-12-31">
+        
+                <div id="bn3" class="videre" onclick="bU5n()">Næste</div>
+              </fieldset>
+              
+
+
+
+              <fieldset id="bU5">
+                <legend>Bekræft din bestilling</legend>
+                <div id="isTrue">
+                    <label id="navn_ud">Navn: </label> <br>
+                    <label id="email_ud">Email: </label> <br>
+                    <label id="pax_ud">Antal: </label> <br>
+                    <label id="bday_ud">Fødselsdag: </label> <br>
+                    <label id="dato_ud">Besøgsdag: </label>
+                </div>
+        
+                <input type="submit" value="Book min bestlling" id="submit">
+              </fieldset>
+
+
+            </form>
+        </div>
+
+    </div>
+
+    </main>
+
+
+    <footer>
+       
+        <div id="footerInfo"></div>
+
+    </footer>
+    
+</body>
+
+</html>
+<script src="js/nav.js"></script>
+<script src="js/script.js"></script>

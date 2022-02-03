@@ -1,0 +1,257 @@
+/* house */
+
+#house{
+position: absolute;
+
+width: 475px;
+height: 493px;
+left: 50px;
+background: rgba(255, 0, 0, 0.42);
+border: 3px solid #000000;
+box-sizing: border-box;
+border-radius: 20px;
+}
+
+/* door */
+
+#door{
+position: absolute;
+width: 25px;
+height: 189px;
+top: 166px;
+left: 458px;
+background: #C4C4C4;
+border: 3px solid #000000;
+box-sizing: border-box;
+}
+
+/* tab1 */
+
+#tab1{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 30px;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+#tab1:active{
+    background-color: rgba(255, 0, 0, 0.42);
+}
+/* tab5 */
+
+#tab5{
+position: absolute;
+width: 40px;
+height: 32px;
+top: 396px;
+left: 30px;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+/* tab2 */
+
+#tab2{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 130px;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+/* tab3 */
+
+#tab3{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 230px;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+/* tab4 */
+
+#tab4{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 330px;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+/* tabTxt1 */
+
+#tabTxt1{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 53px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+/* tabTxt5 */
+
+#tabTxt5{
+position: absolute;
+width: 40px;
+height: 32px;
+top: 396px;
+left: 34px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+/* tabTxt2 */
+
+#tabTxt2{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 154px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+#tabTxt3{
+/* tabTxt3 */
+
+
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 254px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+/* tabTxt4 */
+
+#tabTxt4{
+position: absolute;
+width: 80px;
+height: 32px;
+top: 103px;
+left: 354px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+
+
+/* bar */
+
+#bar1{
+position: absolute;
+width: 15px;
+height: 88px;
+left: 398px;
+top: 0px;
+background: rgba(211, 114, 0, 0.7);
+}
+
+/* bar */
+
+#bar2{
+position: absolute;
+width: 8px;
+height: 30px;
+left: 424px;
+top: 69px;
+background: rgba(211, 114, 0, 0.7);
+transform: rotate(-90deg);
+}
+
+/* txtbar */
+
+#txtBar{
+position: absolute;
+width: 40px;
+height: 53px;
+left: 415px;
+top: 25px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+transform: rotate(90deg);
+
+}
+/* bookingconfirm */
+
+#bookingcorfirm{
+display:none;
+position: absolute;
+width: 328px;
+height: 104px;
+top: 200px;
+left:50px;
+background: #C4C4C4;}

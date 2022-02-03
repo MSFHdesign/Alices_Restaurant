@@ -1,0 +1,143 @@
+/* Selvstudie II.i */
+
+  
+  
+#bNav {
+    position: fixed;
+    left: 5px;
+    top:5px;
+    width: 30vw;
+    height:100vh;
+    background: rgba(60, 60, 60, 0.9);
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    z-index: 1;
+    transition:0.6s;
+    opacity: 0;
+  
+  }
+
+
+  .menu {
+    margin-left:0em;
+    margin-right: 1em;
+    display:list-item;
+  }
+  
+  #nav li:not(#sub) {
+    display: inline;
+  }
+  
+  
+    .submenu {
+      position: absolute;
+      display: block;
+      list-style-type: none;
+      margin: 0 0em;
+      padding: 0 0em;
+
+    }
+
+    #sub1 {
+        border: 2px solid white;
+        border-style: none none dotted none;
+    }
+    #sub3 {
+        border: 2px solid white;
+        border-style: dotted none none none;
+    }
+    .submenu {
+        border: 2px solid white;
+      border-style: none none dotted dotted;
+    }
+
+
+    li:active>.submenu {
+      display: block;
+    }
+  
+    .menu {
+      list-style-type: none;
+    }
+  
+  nav {
+    clear:both;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+#menuToggle {
+  z-index: 99999;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 1000; 
+
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 999;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.6s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 1s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(-4px, 4px);
+  background: black;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  background: rgba(60, 60, 60, 0.9);
+  opacity: 0;
+  transform: translate(0px, 40px) scale(5, 2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(45deg) translate(-4px, -5px);
+}
