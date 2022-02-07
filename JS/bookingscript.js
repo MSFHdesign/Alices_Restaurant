@@ -1,3 +1,6 @@
+//Canvas
+var house = document.getElementById('house');
+var ctx = house.getContext("2d");
 // borde
 var bord1;
 var bord2;
@@ -51,22 +54,40 @@ function init(){
     bDate = document.getElementById('bookingDate');
     bAntal = document.getElementById('bookingAntal');
     eListener();
-    console.log('init = klar');
+    console.log('init = Nej');
 
 
 }
 
 function eListener(){
-    console.log('elistener = klar');
+    console.log('elistener = ZzzzZzz');
+    canvas();
     tab1Click();
 
 }
 
+function canvas(){
+    console.log('Canvas = Her!');
+
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+
+
+
+}
+
 function tab1Click(){
-    console.log('tab1 = klar')
+    console.log('bord 1 = klar')
     tab1.addEventListener('click', function(){
         bConfirm.style.display = 'block';
     })
 }
 
 
+
+
+const myJSON = '{"tdag":["Forret", "Hovedret", "dessert"], "mdag":["Forret", "Hovedret", "dessert"]}';
+const myObj = JSON.parse(myJSON);
+
+document.getElementById("demo").innerHTML = "Tirsdags ret: " + myObj.tdag[0] + " " + myObj.tdag[1]+ " " + myObj.tdag[2];

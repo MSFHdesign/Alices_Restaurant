@@ -24,9 +24,12 @@
     showMenu.style.display = 'block';
     bNav.style.left = '-410'+'px';// Selvstudie II.iiiiii
   }) */
+  var menuToggle = document.getElementById('menuToggle');
   let input = document.getElementById('burgerCheck');
+  console.log('nav.js = awesome')
   menuToggle.addEventListener('click', function(){
-    if(input.checked){ 
+    
+    if(input.checked){ console.log('Nav åbner')
         bNav.style.opacity = '1'; // Selvstudie II.iiii
         bNav.style.top = '45'+'px'
         //Selvstudie II.i
@@ -47,6 +50,7 @@
 
     }
     else{
+      console.log('Nav lukker')
         bNav.style.top = '5'+'px';// Selvstudie II.iiiiii
 				bNav.style.opacity = '0';
         

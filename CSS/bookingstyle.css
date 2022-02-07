@@ -15,6 +15,7 @@ border-radius: 20px;
 /* door */
 
 #door{
+    z-index:1;
 position: absolute;
 width: 25px;
 height: 189px;
@@ -255,3 +256,10 @@ height: 104px;
 top: 200px;
 left:50px;
 background: #C4C4C4;}
+
+
+#demo{
+    position:absolute;
+    top: 600px;
+    left: 50px;
+}
