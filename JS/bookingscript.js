@@ -91,3 +91,82 @@ const myJSON = '{"tdag":["Forret", "Hovedret", "dessert"], "mdag":["Forret", "Ho
 const myObj = JSON.parse(myJSON);
 
 document.getElementById("demo").innerHTML = "Tirsdags ret: " + myObj.tdag[0] + " " + myObj.tdag[1]+ " " + myObj.tdag[2];
+
+
+menu = `{
+  "menu": [
+    {
+      "id": 1,
+      "Titel": "Gullash m. pure",
+      "beskrivelse": "langtidsstegt ",
+      "pris": 999,
+      "ret": "Hovedret",
+      "foto": "gullash.jpg"
+    },
+    {
+      "id": 2,
+      "Titel": "Taco",
+      "beskrivelse": "Med kød og grønt",
+      "pris": 232,
+      "ret": "Hovedret",
+      "foto": "taco.jpg"
+    },
+    {
+      "id": 3,
+      "Titel": "Kyllingesticks",
+      "beskrivelse": "nudler, grønt og spejlæg",
+      "pris": 543,
+      "ret": "forret",
+      "foto": "kyllingesticks.jpg"
+    },
+    {
+      "id": 4,
+      "Titel": "Grønsagssuppe",
+      "beskrivelse": "Direkte fra haven",
+      "pris": 2135,
+      "ret": "forret",
+      "foto": "groensag.jpg"
+    },
+    {
+      "id": 5,
+      "Titel": "Creme brúlee",
+      "beskrivelse": "flamberet sukker-rush",
+      "pris": 9876,
+      "ret": "dessert",
+      "foto": "brulee.jpg"
+    },
+    {
+      "id": 6,
+      "Titel": "Æblekage",
+      "beskrivelse": "Med ævler fra moars have",
+      "pris": 5628,
+      "ret": "dessert",
+      "foto": "aeblekage.jpg"
+    },
+    {
+      "id": 7,
+      "Titel": "Brød",
+      "beskrivelse": "frisk bragt",
+      "pris": 3920,
+      "ret": "tilbehør",
+      "foto": "broed.jpg"
+    }
+  ]
+}`;
+
+  const current_menu = JSON.parse(menu);
+    // loop der henter hele arrayet
+    for (let i=0; i<current_menu.menu.length; i++){
+      console.log( current_menu.menu[i].titel )
+      demo.innerHTML += `
+        <div class="current_menu">
+          <h2> ${current_menu.menu[i].Titel} </h2>
+          <h4> ${current_menu.menu[i].pris} kr </h4>
+          <p> ${current_menu.menu[i].beskrivelse} </p>
+         <!--   <img src="images/${current_menu.menu[i].foto}" alt="${current_menu.menu[i].titel}"> -->
+        </div>
+      `
+  
+  
+    }
+

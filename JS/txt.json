@@ -1,5 +1,22 @@
-{"Menu":[
-    { "forret":"rejecocktail", "vin":"Hvid" },
-    { "hovedret":"oksefille m. pom de fris", "vin":"Rød" },
-    { "dessert":"Is med chokolade", "vin":"Dessert" }
-  ]}
+{
+    "Menu": [
+     {
+      "forret": "rejecocktail",
+      "vin": "Hvid",
+      "beskrivelse": "...",
+      "pris": "kr"
+     },
+     {
+      "hovedret": "oksefille m. pom de fris",
+      "vin": "Rød",
+      "beskrivelse": "...",
+      "pris": "kr"
+     },
+     {
+      "dessert": "Is med chokolade",
+      "vin": "Dessert",
+      "beskrivelse": "...",
+      "pris": "kr"
+     }
+    ]
+   }

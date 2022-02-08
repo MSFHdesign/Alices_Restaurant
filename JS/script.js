@@ -155,9 +155,13 @@ for (vis in ansatte){
   var bU4 = document.getElementById('bU4');
 
 function bU2n(){
+    if (document.getElementById('navn_ind').value =="" || document.getElementById('navn_ind').value == null || document.getElementById('email_ind').value == null){ alert('Please fill in your name'); return false}
+    
+    else {
     bU1.style.display ="none";
     bU2.style.display ="block";
-
+    return true;
+    }
 }
 
 function bU3n(){
