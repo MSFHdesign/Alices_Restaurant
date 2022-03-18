@@ -41,6 +41,7 @@
             <li id="sub1"><a href=index.html>Forside</a> </li>
             <li id="sub2"><a href="#hvem">Ansatte</a></li> <!-- Selvstudie II.iiiii -->
             <li id="sub3"><a href="Booking.html">Booking</a></li>
+            <li id="sub4><a href="kioskMode.html">Kioskmode</a> </li>
         </ul>
         </li>
         </ul>

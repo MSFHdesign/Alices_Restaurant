@@ -2,9 +2,9 @@
 let dishes = fetch("excel-to-json.json").then(
   response => {
     return response.json(); // get JSON data$
-  }).then(data => {
+  }).then(dishes => {
 
-  console.log(data);
+  console.log(dishes);
   // tjek objektet i browserens udviklingsværktøj
 
 
@@ -69,26 +69,6 @@ for (let i = 0; i < dish.length; i++) {
       )"> Order ${dish[i].navn}</button>
   <div>
 `}
-
-
-function nytSprog1(){
-  theMenu.innerHTML ="" 
-  for (let i = 0; i < dish.length; i++) {
-  themenu.innerHTML += `
-  <div class="aDish">
-    <h2>  ${dish[i].navn} </h2>
-    
-      <img src="${dish[i].pic}"  height = 200px width = 200px alt="${dish[i].alt}">
-      <p> <i> ${dish[i].beskrivelse} </i> </p>
-    <h4> <u> Price: ${dish[i].pris} kr. </u> </h4>
-    <button onclick="anOrder(
-      '${dish[i].navn}',
-      '${dish[i].pris}'
-      )"> Order ${dish[i].navn}</button>
-  <div>
-`
-
-    } }   
     function nytSprog2(){
       theMenu.innerHTML =""
       for (let i = 0; i < dish.length; i++) {
