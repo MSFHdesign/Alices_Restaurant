@@ -8,6 +8,17 @@ var maaneder = ['januar','februar','marts','april','maj','juni','juli','august',
 var c = document.getElementById('current-time');
 var week = document.getElementById('dato');
 
+//fetch JSON
+fetch("js/excel-to-json.json")
+.then(response => response.json())
+.then(console.log('json er loaded'))
+.then(json => console.log(json.menu));
+
+
+
+
+
+
 //Events
 var events = document.getElementById('eventsdato');
 var eventbeskrivelse = document.getElementById('eventbeskrivelse')
@@ -38,7 +49,6 @@ let citater = [
     '"All I ever wanted was to cook the perfect meal."<br>Alice',
     '"You can get anything you want at Alice\'s restaurant" <br> Arlo Guthrie'
 ];
-
 
 let happening =[
    'Det er Søndag', 'Det er Mandag','Det er Tirsdag','Det er Onsdag','Det er Torsdag','Det er Fredag','Det er Lørdag'
@@ -146,9 +156,6 @@ for (vis in ansatte){
 
 
   // Booking  selvstudie III
-
-
-
   var bU1 = document.getElementById('bU1');
   var bU2 = document.getElementById('bU2');
   var bU3 = document.getElementById('bU3');
@@ -200,12 +207,7 @@ function bU5n(){
     function copyToVdato(Vdato){
         document.getElementById('dato_ud').textContent = 'Besøgsdag: ' + Vdato.value;
     }
-    
-
-
-
-
-
+  
 
 // Load the IFrame Player API code asynchronously.
 var tag = document.createElement('script_yt');

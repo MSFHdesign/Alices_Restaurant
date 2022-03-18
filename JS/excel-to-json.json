@@ -1,0 +1,24 @@
+{
+"dishes" : [{
+  "name": "Egyptisk suppe",
+  "image": "img/ret1.jpg",
+  "price": 123,
+  "alt": "vores meget lækre egyptiske suppe langtidskogt",
+  "beskrivelse": "Suppen har simmeret i over 72 timer, velegnet til <em> vegetar </em> <br> indeholde: <ul><li> rødelinser </li> <li>løg</li> <li>hvidløg</li> <li>gulerødder</li> <li>pore</li> </ul>"
+},
+{
+  "name": "Mac 'n cheese",
+  "image": "img/ret2.jpg",
+  "price": 129,
+  "alt": "Mac and cheese for enhver oste elsker",
+  "beskrivelse": "Til enhver osteelsker, vil du elske vores vegetarisk Mac 'n cheese, med 38 lag af ost"
+},
+{
+  "name": "Laks med snask",
+  "image": "img/ret3.jpg",
+  "price": 111,
+  "alt": "En lakse rolade med andet fisk og grønt",
+  "beskrivelse": "Laks med andet snask"
+}
+]
+}
